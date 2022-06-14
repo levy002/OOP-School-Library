@@ -11,10 +11,6 @@ To get a local copy up and running follow these simple example steps.
 ``` git@github.com:levy002/OOP-School-Library.git ```
 - navigate to the folder
 ``` cd <DIRECTORY> ```
-- Install packages
-``` npm i ```
-- Run the app
-``` npm start ```
 
 # Author
 
