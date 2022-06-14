@@ -1,5 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 # 00P School Library
+  The OOP School Library is a project for adding new person which can be a student or a teacher.
 # Built with
 - Ruby
 
