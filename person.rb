@@ -4,7 +4,7 @@ class Person < Nameable
   attr_reader :id, :rentals
   attr_accessor :name, :age
 
-  def initialize(age, name = 'Unknown', parent_permission: true)
+  def initialize(age:, name: 'Unknown', parent_permission: true)
     super()
     @id = Random.rand(1..100)
     @name = name
@@ -13,8 +13,8 @@ class Person < Nameable
     @rentals = []
   end
 
-  def add_rental(date, book)
-    @rentals.push(Rental.new(date, self, book)) unless @rentals.include?(Rental.new(date, self, book))
+  def add_rental(rental)
+    @rentals << rental
   end
 
   def can_use_services?

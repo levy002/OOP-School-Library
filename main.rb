@@ -20,12 +20,14 @@ def selecting
   when '5'
     new_rental
   when '6'
-    rentals_list
+    rental_list
   when '7'
-    puts 'Thank you for using the app. Goodbye!'
+    puts 'Thank you for using our library app!'
+    exit!
   else
     puts 'Invalid input. Try again'
   end
+  selecting
 end
 
 main
