@@ -13,6 +13,10 @@ class Person < Nameable
     @rentals = []
   end
 
+  def add_rental(date, book)
+    @rentals.push(Rental.new(date, self, book)) unless @rentals.include?(Rental.new(date, self, book))
+  end
+
   def can_use_services?
     true if @age >= 18 || parent_permission == true
   end
@@ -25,9 +29,5 @@ class Person < Nameable
 
   def correct_name
     @name
-  end
-
-  def add_rental(date, book)
-    @rentals.push(Rental.new(date, self, book)) unless @rentals.include?(Rental.new(date, self, book))
   end
 end
